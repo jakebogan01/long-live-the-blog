@@ -1,11 +1,10 @@
 <script>
-    // Remove linting warning coming from HandleInertiaRequests
+    import BreezeAuthenticatedLayout from "@/Layouts/Breeze/Authenticated.svelte";
     // https://inertiajs.com/shared-data
     /* svelte-ignore unused-export-let */
     export let errors = {};
     /* svelte-ignore unused-export-let */
     export let auth = {};
-    import BreezeAuthenticatedLayout from "@/Layouts/Authenticated.svelte";
 </script>
 
 <svelte:head>

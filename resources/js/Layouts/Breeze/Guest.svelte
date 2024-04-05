@@ -1,5 +1,5 @@
 <script>
-    import BreezeApplicationLogo from "@/Components/ApplicationLogo.svelte";
+    import BreezeApplicationLogo from "@/Components/Breeze/ApplicationLogo.svelte";
     import { inertia } from "@inertiajs/svelte";
 </script>
 
@@ -7,7 +7,7 @@
     class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100"
 >
     <div>
-        <a href="/" use:inertia>
+        <a href="/public" use:inertia>
             <BreezeApplicationLogo
                 class="w-20 h-20 fill-current text-gray-500"
             />

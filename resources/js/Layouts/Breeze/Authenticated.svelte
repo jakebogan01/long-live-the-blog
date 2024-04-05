@@ -1,9 +1,9 @@
 <script>
-    import BreezeApplicationLogo from "@/Components/ApplicationLogo.svelte";
-    import BreezeDropdown from "@/Components/Dropdown.svelte";
-    import BreezeDropdownLink from "@/Components/DropdownLink.svelte";
-    import BreezeNavLink from "@/Components/NavLink.svelte";
-    import BreezeResponsiveNavLink from "@/Components/ResponsiveNavLink.svelte";
+    import BreezeApplicationLogo from "@/Components/Breeze/ApplicationLogo.svelte";
+    import BreezeDropdown from "@/Components/Breeze/Dropdown.svelte";
+    import BreezeDropdownLink from "@/Components/Breeze/DropdownLink.svelte";
+    import BreezeNavLink from "@/Components/Breeze/NavLink.svelte";
+    import BreezeResponsiveNavLink from "@/Components/Breeze/ResponsiveNavLink.svelte";
     import { inertia, page, Link } from "@inertiajs/svelte";
     let showingNavigationDropdown = false;
     export let user = $page.props.auth.user;
@@ -18,7 +18,7 @@
                     <div class="flex">
                         <!-- Logo -->
                         <div class="shrink-0 flex items-center">
-                            <Link href="/dashboard">
+                            <Link href="/">
                                 <BreezeApplicationLogo
                                     class="block h-9 w-auto"
                                 />
@@ -40,12 +40,6 @@
                                 active={$page.component === "About"}
                             >
                                 About
-                            </BreezeNavLink>
-                            <BreezeNavLink
-                                href="/links"
-                                active={$page.component === "Links/Index"}
-                            >
-                                Links
                             </BreezeNavLink>
                         </div>
                     </div>

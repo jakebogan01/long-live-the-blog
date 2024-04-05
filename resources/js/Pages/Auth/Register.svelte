@@ -1,9 +1,9 @@
 <script>
-    import BreezeButton from "@/Components/Button.svelte";
-    import BreezeGuestLayout from "@/Layouts/Guest.svelte";
-    import BreezeInput from "@/Components/Input.svelte";
-    import BreezeLabel from "@/Components/Label.svelte";
-    import BreezeValidationErrors from "@/Components/ValidationErrors.svelte";
+    import BreezeButton from "@/Components/Breeze/Button.svelte";
+    import BreezeGuestLayout from "@/Layouts/Breeze/Guest.svelte";
+    import BreezeInput from "@/Components/Breeze/Input.svelte";
+    import BreezeLabel from "@/Components/Breeze/Label.svelte";
+    import BreezeValidationErrors from "@/Components/Breeze/ValidationErrors.svelte";
     import { inertia, useForm } from "@inertiajs/svelte";
     export let errors = {};
 

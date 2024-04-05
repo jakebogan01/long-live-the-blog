@@ -1,10 +1,6 @@
 <?php
 
-use App\Http\Controllers\LinkController;
 use Illuminate\Foundation\Application;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
@@ -39,8 +35,3 @@ Route::get('/dashboard', function () {
 Route::get('/about', function () {
     return Inertia::render('About');
 })->middleware(['auth', 'verified'])->name('about');
-
-// Links
-Route::get('/links', [LinkController::class, 'index'])->middleware(['auth', 'verified'])->name('links.index');
-Route::post('/links', [LinkController::class, 'store'])->name('links.store');
-Route::delete('/links/{link}', [LinkController::class, 'destroy'])->name('links.destroy');

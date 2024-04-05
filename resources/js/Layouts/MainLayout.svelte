@@ -2,7 +2,7 @@
     import { inertia } from "@inertiajs/svelte";
 </script>
 
-<main class="max-w-4xl m-auto h-screen p-14">
+<main>
     <header>
         <a use:inertia href="/">Home</a>
         <a use:inertia href="/about">About</a>

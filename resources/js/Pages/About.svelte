@@ -1,11 +1,12 @@
 <script>
-    import MainLayout from "@/Layouts/Authenticated.svelte";
+    import BreezeAuthenticatedLayout from "@/Layouts/Breeze/Authenticated.svelte";
 </script>
 
 <svelte:head>
     <title>About</title>
 </svelte:head>
-<MainLayout>
+
+<BreezeAuthenticatedLayout>
     <h2 class="font-semibold text-xl text-gray-800 leading-tight" slot="header">
         About
     </h2>
@@ -19,4 +20,4 @@
             </div>
         </div>
     </div>
-</MainLayout>
+</BreezeAuthenticatedLayout>
