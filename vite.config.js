@@ -6,7 +6,7 @@ import { resolve } from 'path';
 const projectRootDir = resolve(__dirname);
 import { homedir } from 'os';
 
-let host = 'laravel-breeze-svelte.test'
+let host = 'longlivetheblog.test'
 
 export default defineConfig({
     plugins: [

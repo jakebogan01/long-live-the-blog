@@ -18,5 +18,5 @@
     {value}
     bind:checked={proxyChecked}
     on:change={onChange}
-    class="rounded border-gray-300 text-indigo-600 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+    class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600"
 />
